@@ -1,0 +1,15 @@
+.status {
+  border: 2px dashed green;
+  text-align: center;
+  font: bold 12px/16px Arial;
+  padding: 10px;
+}
+.step-button {
+  background-color: rgb(27, 92, 86);
+  color: white;
+  font: 12px/16px Arial;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 3px;
+  padding: 5px;
+}
