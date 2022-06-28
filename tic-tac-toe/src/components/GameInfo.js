@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./components.css";
 
-const GameInfo = ({ history, jumpTo, status }) => {
+const GameInfo = ({ history, jumpTo, status, winnerInfo, winner }) => {
   return (
     <div className="game-info">
       <div className="status">{status}</div>

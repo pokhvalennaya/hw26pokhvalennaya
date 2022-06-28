@@ -3,6 +3,7 @@ import { useState } from "react";
 import calculateWinner from "../helpers/calculateWinner";
 import Board from "./Board";
 import GameInfo from "./GameInfo";
+import "./components.css";
 
 const Game = () => {
   const [history, setHistory] = useState([
@@ -45,7 +46,11 @@ const Game = () => {
 
   let status;
   if (winnerInfo.winner) {
-    status = `Winner: Player ${winnerInfo.winner}`;
+    status = (
+      <p>
+        Winner: Player <span className="winner">{winnerInfo.winner}</span>
+      </p>
+    );
   } else if (stepNumber === 9) {
     status = "It's draw";
   } else {
