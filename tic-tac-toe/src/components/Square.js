@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
+import "./components.css";
 
 const Square = ({ value, onClick, isWinnerLine }) => (
   <button
-    className="square"
+    className={`square + ${isWinnerLine ? "winner-square" : ""}`}
     onClick={onClick}
-    style={isWinnerLine ? { backgroundColor: "green", color: "white" } : null}
   >
     {value}
   </button>

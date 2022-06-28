@@ -17,3 +17,7 @@
   color: green;
   font-weight: bold;
 }
+.winner-square {
+  background-color: green;
+  color: white;
+}
